@@ -8,7 +8,7 @@ use MyApp\Chat;
 
 $server = IoServer::factory(
     new HttpServer(new WsServer(new Chat())),
-    80
+    8080
 );
 
 echo "🚀 خادم الدردشة يعمل على المنفذ 8080...\n";
